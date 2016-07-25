@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Go
+export GOROOT=$HOME/.go
+export GOPATH=$GOROOT/gocode
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GOOGLE_API_CLIENT_ID=
+export GOOGLE_API_CLIENT_SECRET=
