@@ -4,5 +4,5 @@
 export GOROOT=$HOME/.go
 export GOPATH=$GOROOT/gocode
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-export GOOGLE_API_CLIENT_ID=
-export GOOGLE_API_CLIENT_SECRET=
+export GOOGLE_API_CLIENT_ID=434566854369-r9m80i1iftqacqjn5lcc1mm8buvlvf2n.apps.googleusercontent.com
+export GOOGLE_API_CLIENT_SECRET=8JZI7b_mvYEF9StAuXihUUPP

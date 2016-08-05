@@ -22,10 +22,6 @@ fi
 
 # Instalando paquetes de apt
 if [[ ! -f /opt/apt_done ]]; then
-    # Nodejs 0.10.x /* Versión vieja pero necesaria para usar con harp 0.15.0 */
-    curl -sL https://deb.nodesource.com/setup_0.10 | -E bash -
-    apt-get update
-
     echo "-- Instalamos vim, git, etc... --"
     apt-get install vim git curl clang-3.4 -y
     echo "-- Instalando zsh... --"
@@ -34,6 +30,8 @@ if [[ ! -f /opt/apt_done ]]; then
     apt-get install python-setuptools python-pip python-dev build-essential python-software-properties -y
     # Instalamos nodejs 
     echo "-- Instalando NodeJs 0.10.x"
+    # Nodejs 0.10.x /* Versión vieja pero necesaria para usar con harp 0.15.0 */
+    curl -sL https://deb.nodesource.com/setup_0.10 | sudo -E bash -
     apt-get install nodejs -y
     npm install -g harp@0.15.0
     touch /opt/apt_done
